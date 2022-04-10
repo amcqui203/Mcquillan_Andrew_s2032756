@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Andrew Mcquillan s2032756 -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/salutation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Welcome to Mobile Platform Development Assignment 2021-2022 Andrew Mcquillan S2032756"/>
+        <Button android:id="@+id/startButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get Roadwork info"/>
+        <Button android:id="@+id/IncidentsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get info on current Incidents"/>
+        <Button android:id="@+id/roadworksButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Press to get info on planned Roadworks"/>
+
+        <TextView android:id="@+id/rawDataDisplay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=" date search must be in the following format 04 April 2022"/>
+        <TextView android:id="@+id/error1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""/>
+        <EditText
+            android:id="@+id/dateSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter date for specifc roadwork info here"
+            android:inputType="textPersonName" />
+
+
+        <Button android:id="@+id/dateSearchButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <EditText
+            android:id="@+id/roadSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter road for specifc roadwork info here"
+            android:inputType="textPersonName"
+
+            />
+        <Button android:id="@+id/roadNameSearchButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <TextView
+            android:id="@+id/label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Roadwork info displayed below"/>
+
+
+
+        <TableLayout
+            android:id="@+id/RoadworksTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black">
+            <TableRow
+                android:id="@+id/roadworkRow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                android:id="@+id/labeltable"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/labeltable2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="roadworks displayed here"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView android:id="@+id/label4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=" date search must be in following format 04 Apr 2022 or 04 Apr"/>
+        <TextView android:id="@+id/error2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""/>
+        <EditText
+            android:id="@+id/dateSearchincident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter date for specifc incident info here"
+            android:inputType="textPersonName"
+
+            />
+        <Button android:id="@+id/dateSearchButtonIncident"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <EditText
+            android:id="@+id/roadSearchincident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter road for specifc incident info here"
+            android:inputType="textPersonName"
+
+            />
+        <Button android:id="@+id/roadNameSearchButtonIncident"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Incident info displayed below" />
+        <TableLayout
+            android:id="@+id/IncidentsTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black">
+            <TableRow
+                android:id="@+id/incidentRow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/labeltable3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/labeltable4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Incidents displayed here"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView android:id="@+id/label5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=" date search must be in text format e.g. 04 April, 04 april 2022, April"/>
+        <TextView android:id="@+id/error3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""/>
+        <EditText
+            android:id="@+id/dateSearchplanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter date for specifc incident info here"
+            android:inputType="textPersonName"
+
+            />
+        <Button android:id="@+id/dateSearchButtonPlanned"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <EditText
+            android:id="@+id/roadSearchplanned"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter road for specifc incident info here"
+            android:inputType="textPersonName"
+
+            />
+        <Button android:id="@+id/roadNameSearchButtonPlanned"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Planned Roadwork info displayed below"/>
+
+
+        <TableLayout
+            android:id="@+id/PlannedRoadworksTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black">
+            <TableRow
+                android:id="@+id/plannedRow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/labeltable5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/labeltable6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="Planned roadworks displayed here"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView android:id="@+id/error4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=""/>
+        <EditText
+            android:id="@+id/journeySearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter date for your journey"
+            android:inputType="textPersonName"
+
+            />
+        <Button android:id="@+id/journeyButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"/>
+        <TextView
+            android:id="@+id/label10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="current roadworks below"
+            />
+        <TableLayout
+            android:id="@+id/journeyTable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black">
+            <TableRow
+                android:id="@+id/journeyRow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/labeltable7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/labeltable8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="roadworks matching your date displayed here"/>
+            </TableRow>
+
+        </TableLayout>
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="planned roadworks below"
+            />
+        <TableLayout
+            android:id="@+id/journeyTable2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-black">
+            <TableRow
+                android:id="@+id/journeyRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:id="@+id/labeltable9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/labeltable10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="roadworks displayed here"/>
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+</ScrollView>
